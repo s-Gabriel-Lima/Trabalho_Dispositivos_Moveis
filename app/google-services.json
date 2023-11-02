@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "349913177005",
+    "project_id": "trabalho-dispositivos-mo-a0934",
+    "storage_bucket": "trabalho-dispositivos-mo-a0934.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349913177005:android:c89cc6af1604b1f1c7df24",
+        "android_client_info": {
+          "package_name": "trabalho_dispositivos_moveis.com.br"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlZihnyfsVZz2xIPQc0roF-lVjrHXD1AM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,10 +9,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="420dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitEnd"
         android:src="@drawable/imagem_login_fundo"
+        app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

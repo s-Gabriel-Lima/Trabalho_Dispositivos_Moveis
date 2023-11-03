@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Trabalho Dispositivos Moveis</string>
+    <string name="app_name">Trabalho_Dispositivos_Moveis</string>
+    <string name="input_hint_name">Nome usuário</string>
+    <string name="input_hint_password">Senha</string>
+    <string name="button_login">Entrar</string>
+    <string name="welcome_message">Seja bem vindo!</string>
+    <string name="title_login">Login</string>
+
+    <string name="register_ask">Não possui cadastro? Registre-se aqui!</string>
 </resources>

@@ -28,37 +28,42 @@
 
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_message"
+            android:textAppearance="@style/style_text" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/title_login"
-            android:textAppearance="@style/style_title" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:textAppearance="@style/style_title"
             android:layout_marginBottom="20dp"
-            android:text="@string/welcome_message"
-            android:textAppearance="@style/style_text" />
+            android:textFontWeight="700"
+            android:textSize="50dp"
+            />
 
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:backgroundTint="#1D9A62"
+            android:backgroundTint="@color/primary"
             android:hint="@string/input_hint_name"
-            android:shadowColor="#1D9A62"
-            android:textColorHint="#1D9A62" />
+            android:shadowColor="@color/primary"
+            android:textColorHint="@color/primary" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:backgroundTint="#1D9A62"
+            android:backgroundTint="@color/primary"
             android:hint="@string/input_hint_password"
-            android:shadowColor="#1D9A62"
-            android:textColorHint="#1D9A62" />
+            android:shadowColor="@color/primary"
+            android:textColorHint="@color/primary" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
@@ -74,7 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/register_ask"
-            android:textColor="#1D9A62"
+            android:textColor="@color/primary"
             android:textSize="10dp" />
 
 

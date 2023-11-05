@@ -7,4 +7,6 @@
     <string name="confirm_password">Confirmar Senha</string>
     <string name="confirm_email">Confirmar Email</string>
     <string name="email_input_register">Email</string>
+    <string name="input_hint_password">Senha</string>
+    <string name="input_hint_name">Nome</string>
 </resources>

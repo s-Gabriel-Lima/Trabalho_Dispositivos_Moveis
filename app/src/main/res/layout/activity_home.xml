@@ -5,7 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home">
-    
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <View
+        android:id="@+id/logo"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="295dp"
+        android:background="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="@+id/foto_perfil"
+        app:layout_constraintEnd_toStartOf="@+id/foto_perfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/foto_perfil"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/foto_perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

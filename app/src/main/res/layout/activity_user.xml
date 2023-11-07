@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".user">
+    <ImageView
+        android:id="@+id/imagem_user_fundo"
+        android:src="@drawable/imagem_user_fundo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/emogi"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/exit"
+        tools:layout_editor_absoluteX="188dp"
+        tools:layout_editor_absoluteY="578dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sair"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="613dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckApp v1.1"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="670dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="35dp"
+        android:layout_height="37dp"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="187dp"
+        tools:layout_editor_absoluteY="577dp" />
+
+    <EditText
+        android:layout_width="134dp"
+        android:layout_height="46dp"
+        android:text="nomedousuario"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="524dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

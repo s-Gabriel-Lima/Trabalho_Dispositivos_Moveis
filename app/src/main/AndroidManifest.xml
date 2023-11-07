@@ -13,6 +13,9 @@
         android:theme="@style/Theme.TrabalhoDispositivosMoveis"
         tools:targetApi="31">
         <activity
+            android:name=".user"
+            android:exported="false" />
+        <activity
             android:name=".cadastro"
             android:exported="false" />
         <activity

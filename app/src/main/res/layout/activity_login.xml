@@ -37,6 +37,7 @@
             android:textAppearance="@style/style_text" />
 
         <TextView
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/title_login"
@@ -48,6 +49,8 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_login"
+            android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
@@ -57,6 +60,8 @@
             android:textColorHint="@color/primary" />
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/senha_login"
+            android:inputType="numberPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
@@ -66,6 +71,7 @@
             android:textColorHint="@color/primary" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/entrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"

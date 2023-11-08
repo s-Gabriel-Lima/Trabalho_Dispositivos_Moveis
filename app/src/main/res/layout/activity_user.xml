@@ -19,6 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="80dp"
@@ -26,7 +27,8 @@
         android:layout_gravity="center"
         app:srcCompat="@drawable/emogi"
         tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="409dp" />
+        tools:layout_editor_absoluteY="409dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -35,7 +37,8 @@
         android:layout_gravity="center"
         app:srcCompat="@drawable/exit"
         tools:layout_editor_absoluteX="188dp"
-        tools:layout_editor_absoluteY="578dp" />
+        tools:layout_editor_absoluteY="578dp"
+        tools:ignore="DuplicateIds,MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
@@ -43,7 +46,8 @@
         android:layout_height="wrap_content"
         android:text="Sair"
         tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="613dp" />
+        tools:layout_editor_absoluteY="613dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
@@ -51,16 +55,19 @@
         android:layout_height="wrap_content"
         android:text="CheckApp v1.1"
         tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="670dp"/>
+        tools:layout_editor_absoluteY="670dp"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bt_logout"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="35dp"
-        android:layout_height="37dp"
-        android:text="Button"
-        android:visibility="invisible"
-        tools:layout_editor_absoluteX="187dp"
-        tools:layout_editor_absoluteY="577dp" />
+        android:layout_height="35dp"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="188dp"
+        tools:layout_editor_absoluteY="578dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:layout_width="134dp"
@@ -68,5 +75,6 @@
         android:text="nomedousuario"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="524dp" />
+        tools:layout_editor_absoluteY="524dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

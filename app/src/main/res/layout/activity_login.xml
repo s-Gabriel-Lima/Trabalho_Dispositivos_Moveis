@@ -49,6 +49,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
+            android:id="@+id/username"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:backgroundTint="@color/primary"
@@ -60,6 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
+            android:id="@+id/password"
             android:backgroundTint="@color/primary"
             android:hint="@string/input_hint_password"
             android:shadowColor="@color/primary"

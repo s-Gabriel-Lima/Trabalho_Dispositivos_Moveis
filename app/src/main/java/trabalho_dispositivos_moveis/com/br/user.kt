@@ -5,7 +5,6 @@ import android.app.ActivityManager
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import trabalho_dispositivos_moveis.com.br.databinding.ActivityMainBinding
 import trabalho_dispositivos_moveis.com.br.databinding.ActivityUserBinding
 
 class user : AppCompatActivity() {

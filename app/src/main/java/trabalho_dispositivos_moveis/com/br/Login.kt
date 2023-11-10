@@ -15,7 +15,7 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        window.statusBarColor = Color.parseColor("#193938")
         binding.entrar.setOnClickListener{view ->
             val email = binding.emailLogin.text.toString()
             val senha = binding.senhaLogin.text.toString()
@@ -34,10 +34,21 @@ class Login : AppCompatActivity() {
             }
 
         }
+        binding.criarCadastro.setOnClickListener {
+            navegartelaCadastro()
+        }
 
     }
     private fun navegartelaprincipal(){
         val intent = Intent(this,MainActivity::class.java) //AO INVES DE MAINACTIVITY COLOCAR A ACTIVITY DA TELA DE USUÁRIO QUE AINDA NÃO EXISTE NESSE BRANCH DO PROJETO
+        startActivity(intent)
+        finish()
+
+
+    }
+
+    private fun navegartelaCadastro(){
+        val intent = Intent(this,cadastro::class.java) //AO INVES DE MAINACTIVITY COLOCAR A ACTIVITY DA TELA DE USUÁRIO QUE AINDA NÃO EXISTE NESSE BRANCH DO PROJETO
         startActivity(intent)
         finish()
 

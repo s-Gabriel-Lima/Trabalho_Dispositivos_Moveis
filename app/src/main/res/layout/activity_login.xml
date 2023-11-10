@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Login"
+    android:background="@color/bg_white">
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
         android:scaleType="fitEnd"
         android:src="@drawable/imagem_login_fundo"
         app:layout_constraintBottom_toTopOf="parent"
@@ -20,75 +21,85 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
 
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
 
-
         <TextView
-            android:id="@+id/cadastrarUser"
-            android:gravity="start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
             android:text="@string/welcome_message"
-            android:textAppearance="@style/style_text" />
+            android:textAppearance="@style/style_text"
+            android:textColor="@color/light_green"
+            android:textSize="14sp" />
+
 
         <TextView
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_bold"
             android:text="@string/title_login"
             android:textAppearance="@style/style_title"
-            android:layout_marginBottom="20dp"
-            android:textFontWeight="700"
-            android:textSize="50dp"
-            />
-
+            android:textColor="@color/primary"
+            android:textFontWeight="900"
+            android:textSize="52sp" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email_login"
-            android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:backgroundTint="@color/primary"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/roboto"
             android:hint="@string/input_hint_name"
-            android:shadowColor="@color/primary"
-            android:textColorHint="@color/primary" />
+            android:inputType="textEmailAddress"
+            android:shadowColor="@color/gray"
+            android:textColorHint="@color/gray" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/senha_login"
-            android:inputType="numberPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:backgroundTint="@color/primary"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/roboto"
             android:hint="@string/input_hint_password"
-            android:shadowColor="@color/primary"
-            android:textColorHint="@color/primary" />
+            android:inputType="numberPassword"
+            android:shadowColor="@color/gray"
+            android:textColorHint="@color/gray" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/entrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:backgroundTint="#1D9A62"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/secondary"
+            android:fontFamily="@font/roboto_medium"
             android:text="@string/button_login"
-            app:cornerRadius="10dp" />
+            android:textSize="24sp"
+            app:cornerRadius="50dp" />
 
         <Button
-            android:id="@+id/criarCadastro"
+            android:id="@+id/textButton"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
             android:text="@string/register_ask"
+            android:textAllCaps="false"
             android:textColor="@color/primary"
-            android:textSize="10dp" />
+            android:textSize="14sp" />
 
 
     </LinearLayout>

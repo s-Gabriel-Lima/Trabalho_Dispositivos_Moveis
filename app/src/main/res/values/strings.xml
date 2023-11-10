@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Trabalho_Dispositivos_Moveis</string>
-    <string name="input_hint_name">Nome usuário</string>
+    <string name="input_hint_name">Nome</string>
     <string name="input_hint_password">Senha</string>
     <string name="button_login">Entrar</string>
     <string name="welcome_message">Seja bem vindo!</string>
@@ -10,8 +10,9 @@
     <string name="register_button">Cadastrar</string>
     <string name="login_ask">Já possui cadastro? Registre-se aqui!</string>
     <string name="title_register">Cadastro</string>
-    <string name="welcome_register">Seja bem-vindo ao nosso sistema! Cadastre-se agora e faça parte da nossa comunidade.</string>
+    <string name="welcome_register">Mantenha suas tarefas registradas!</string>
     <string name="confirm_password">Confirmar Senha</string>
     <string name="confirm_email">Confirmar Email</string>
     <string name="email_input_register">Email</string>
+
 </resources>

@@ -10,7 +10,7 @@
             android:id="@+id/imageView"
             android:layout_width="fill_parent"
             android:layout_height="100dp"
-            android:scaleType="fitStart"
+            android:scaleType="fitXY"
             android:src="@drawable/imagem_cadastro_fundo"
             app:layout_constraintBottom_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -1,5 +1,7 @@
 package trabalho_dispositivos_moveis.com.br
 
+
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +18,12 @@ class cadastro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCadastroBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        window.statusBarColor = Color.parseColor("#193938")
+
+
+        binding.redirecionaLogin.setOnClickListener{
+            navegartelaLogin()
+        }
 
         binding.textButton.setOnClickListener{view ->
             val email = binding.email.text.toString()
@@ -44,6 +52,7 @@ class cadastro : AppCompatActivity() {
                                 binding.senha.setText("")
                                 binding.senhaConfirmada.setText("")
                                 binding.nome.setText("")
+                                navegartelaLogin()
                             }
                         }
                     }
@@ -51,6 +60,14 @@ class cadastro : AppCompatActivity() {
             }
 
         }
+
+
+
+    }
+    private fun navegartelaLogin(){
+        val intent = Intent(this,Login::class.java) //AO INVES DE MAINACTIVITY COLOCAR A ACTIVITY DA TELA DE USUÁRIO QUE AINDA NÃO EXISTE NESSE BRANCH DO PROJETO
+        startActivity(intent)
+        finish()
 
 
     }

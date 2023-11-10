@@ -11,6 +11,7 @@ import trabalho_dispositivos_moveis.com.br.databinding.ActivityLoginBinding
 class Login : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
     private val auth = FirebaseAuth.getInstance()
+    public var email_correto = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
@@ -27,7 +28,13 @@ class Login : AppCompatActivity() {
             }else{
                 auth.signInWithEmailAndPassword(email,senha).addOnCompleteListener{autenticacao ->
                     if(autenticacao.isSuccessful){
+                        email_correto = email
                         navegartelaprincipal()
+                    }else{
+                        val snackbar = Snackbar.make(view,"Email ou senha inválidos!",Snackbar.LENGTH_SHORT)
+                        snackbar.setBackgroundTint(Color.RED)
+                        snackbar.show()
+
                     }
                 }
 
@@ -40,7 +47,8 @@ class Login : AppCompatActivity() {
 
     }
     private fun navegartelaprincipal(){
-        val intent = Intent(this,MainActivity::class.java) //AO INVES DE MAINACTIVITY COLOCAR A ACTIVITY DA TELA DE USUÁRIO QUE AINDA NÃO EXISTE NESSE BRANCH DO PROJETO
+        val intent = Intent(this,user::class.java) //AO INVES DE MAINACTIVITY COLOCAR A ACTIVITY DA TELA DE USUÁRIO QUE AINDA NÃO EXISTE NESSE BRANCH DO PROJETO
+        intent.putExtra("email", email_correto.toString())
         startActivity(intent)
         finish()
 

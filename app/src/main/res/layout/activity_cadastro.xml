@@ -104,7 +104,7 @@
                 app:cornerRadius="10dp" />
 
             <Button
-                android:id="@+id/textButton1"
+                android:id="@+id/redirecionaLogin"
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

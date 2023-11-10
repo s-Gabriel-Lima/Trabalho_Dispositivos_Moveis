@@ -75,10 +75,10 @@
         tools:ignore="DuplicateIds,MissingConstraints" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/emailUsuario"
         android:layout_width="134dp"
         android:layout_height="46dp"
-        android:text="nomedousuario"
+        android:text="Email Usuário"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

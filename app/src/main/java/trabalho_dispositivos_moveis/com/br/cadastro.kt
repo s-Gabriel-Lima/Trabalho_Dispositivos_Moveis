@@ -3,15 +3,20 @@ package trabalho_dispositivos_moveis.com.br
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import trabalho_dispositivos_moveis.com.br.databinding.ActivityCadastroBinding
 
 class cadastro : AppCompatActivity() {
 
     private lateinit var binding: ActivityCadastroBinding
     private val auth = FirebaseAuth.getInstance()
+    private val db = FirebaseFirestore.getInstance()
+
+
 
 
 
@@ -27,6 +32,8 @@ class cadastro : AppCompatActivity() {
         }
 
         binding.textButton.setOnClickListener{view ->
+
+            val  nome_usuario = binding.nome.text.toString()
             val email = binding.email.text.toString()
             val email_confirmado = binding.emailConfirmado.text.toString()
             val senha = binding.senha.text.toString()
@@ -48,6 +55,21 @@ class cadastro : AppCompatActivity() {
                         snackbar.show()
 
                     }else{
+
+
+                        //salva_db()
+                        val usuariosmap = hashMapOf(
+                            nome_usuario to nome_usuario,
+                            email to email
+                        )
+
+                        db.collection("usuarios").document(nome_usuario).set(usuariosmap).addOnCompleteListener {
+                            Log.d("db","sucesso")
+                        }
+
+
+
+                        //
                         auth.createUserWithEmailAndPassword(email,senha).addOnCompleteListener{ cadastro ->
                             if(cadastro.isSuccessful){
                                 val snackbar = Snackbar.make(view,"Usuário Cadastrado com Sucesso",Snackbar.LENGTH_SHORT)
@@ -81,4 +103,7 @@ class cadastro : AppCompatActivity() {
 
 
     }
+
+
+
 }

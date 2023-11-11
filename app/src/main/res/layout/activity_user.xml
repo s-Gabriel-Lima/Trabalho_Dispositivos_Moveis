@@ -28,11 +28,13 @@
         android:layout_gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.631"
+        app:layout_constraintVertical_bias="0.547"
         app:srcCompat="@drawable/emogi"
         tools:ignore="MissingConstraints" />
+
 
     <ImageView
         android:id="@+id/logout"
@@ -43,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.816"
+        app:layout_constraintVertical_bias="0.842"
         app:srcCompat="@drawable/exit"
         tools:ignore="DuplicateIds,MissingConstraints" />
 
@@ -57,9 +59,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.858"
+        app:layout_constraintVertical_bias="0.878"
         tools:ignore="MissingConstraints" />
-
 
     <TextView
         android:id="@+id/textView2"
@@ -74,17 +75,33 @@
         app:layout_constraintVertical_bias="0.935"
         tools:ignore="DuplicateIds,MissingConstraints" />
 
-    <EditText
+    <TextView
         android:id="@+id/emailUsuario"
         android:layout_width="134dp"
         android:layout_height="46dp"
-        android:text="Email Usuário"
+        android:text=""
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731"
+        app:layout_constraintVertical_bias="0.768"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nome_usuario"
+        android:layout_width="134dp"
+        android:layout_height="46dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68"
+        tools:ignore="MissingConstraints" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -45,6 +45,7 @@
             android:layout_marginBottom="20dp"
             android:text="@string/title_login"
             android:textAppearance="@style/style_title"
+            android:textColor="#0000ff"
             android:textFontWeight="900"
             android:textSize="50dp" />
 

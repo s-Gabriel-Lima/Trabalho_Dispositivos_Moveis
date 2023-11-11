@@ -15,6 +15,7 @@ class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
+
         setContentView(binding.root)
         window.statusBarColor = Color.parseColor("#193938")
         binding.entrar.setOnClickListener{view ->

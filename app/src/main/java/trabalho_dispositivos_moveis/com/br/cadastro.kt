@@ -63,7 +63,7 @@ class cadastro : AppCompatActivity() {
                             email to email
                         )
 
-                        db.collection("usuarios").document(nome_usuario).set(usuariosmap).addOnCompleteListener {
+                        db.collection("usuarios").document(email_confirmado).set(usuariosmap).addOnCompleteListener {
                             Log.d("db","sucesso")
                         }
 

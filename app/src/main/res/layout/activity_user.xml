@@ -77,8 +77,8 @@
 
     <TextView
         android:id="@+id/emailUsuario"
-        android:layout_width="134dp"
-        android:layout_height="46dp"
+        android:layout_width="223dp"
+        android:layout_height="42dp"
         android:text=""
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -91,7 +91,7 @@
 
     <TextView
         android:id="@+id/nome_usuario"
-        android:layout_width="134dp"
+        android:layout_width="226dp"
         android:layout_height="46dp"
         android:text=""
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"

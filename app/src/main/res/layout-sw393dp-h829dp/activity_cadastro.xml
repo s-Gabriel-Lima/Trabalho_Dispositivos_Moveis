@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D9D9D9">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="420dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/imagem_cadastro_fundo_large"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:layout_editor_absoluteX="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="@string/welcome_register"
+                android:textColor="@color/light_green"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="@string/title_register"
+                android:textColor="@color/primary"
+                android:textFontWeight="900"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/input_hint_name"
+                android:shadowColor="@color/primary"
+                android:textColorHint="@color/gray"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/email_input_register"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:shadowColor="@color/primary"
+                android:textColorHint="@color/gray"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_confirmado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/confirm_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:shadowColor="@color/primary"
+                android:textColorHint="@color/gray"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/black"
+                android:hint="@string/input_hint_password"
+                android:inputType="numberPassword"
+                android:shadowColor="@color/primary"
+                android:textColorHint="@color/gray"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/senha_confirmada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/confirm_password"
+                android:inputType="numberPassword"
+                android:shadowColor="@color/primary"
+                android:textColorHint="@color/gray"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/textButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/secondary"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center|center_vertical"
+                android:padding="5dp"
+                android:text="@string/register_button"
+                android:textSize="27sp"
+                app:cornerRadius="50dp" />
+
+            <Button
+                android:id="@+id/redirecionaLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:fontFamily="@font/roboto"
+                android:text="@string/login_ask"
+                android:textColor="@color/primary"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

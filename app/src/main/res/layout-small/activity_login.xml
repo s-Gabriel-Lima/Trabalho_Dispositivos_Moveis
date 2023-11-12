@@ -17,12 +17,11 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="fill_parent"
-            android:layout_height="650dp"
+            android:layout_height="330dp"
             android:scaleType="fitEnd"
             android:src="@drawable/imagem_login_fundo"
             app:layout_constraintBottom_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView">
 
@@ -44,64 +43,66 @@
                 android:gravity="start"
                 android:text="@string/welcome_message"
                 android:textColor="@color/light_green"
-                android:textSize="16sp" />
+                android:textSize="10sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="5dp"
                 android:fontFamily="@font/roboto_black"
                 android:text="@string/title_login"
                 android:textColor="@color/primary"
                 android:textFontWeight="900"
-                android:textSize="50dp" />
+                android:textSize="35dp" />
 
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/email_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="5dp"
                 android:backgroundTint="@color/primary"
                 android:fontFamily="@font/roboto"
                 android:hint="@string/input_hint_email"
                 android:inputType="textEmailAddress"
                 android:shadowColor="@color/primary"
-                android:textColorHint="@color/gray" />
+                android:textColorHint="@color/gray"
+                android:textSize="12dp" />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/senha_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="5dp"
                 android:backgroundTint="@color/primary"
                 android:fontFamily="@font/roboto"
                 android:hint="@string/input_hint_password"
                 android:inputType="numberPassword"
                 android:shadowColor="@color/primary"
-                android:textColorHint="@color/gray" />
+                android:textColorHint="@color/gray"
+                android:textSize="12dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/entrar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="43dp"
                 android:backgroundTint="@color/secondary"
                 android:fontFamily="@font/roboto"
                 android:padding="5dp"
                 android:text="@string/button_login"
-                android:textSize="30sp"
+                android:textSize="18sp"
                 app:cornerRadius="50dp" />
 
             <Button
                 android:id="@+id/criarCadastro"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
                 android:background="#00FFFFFF"
                 android:fontFamily="@font/roboto"
                 android:text="@string/register_ask"
                 android:textColor="@color/primary"
-                android:textSize="16sp" />
+                android:textSize="10sp" />
 
 
         </LinearLayout>

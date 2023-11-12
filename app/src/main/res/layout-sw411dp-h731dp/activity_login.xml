@@ -17,7 +17,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="fill_parent"
-            android:layout_height="650dp"
+            android:layout_height="600dp"
             android:scaleType="fitEnd"
             android:src="@drawable/imagem_login_fundo"
             app:layout_constraintBottom_toTopOf="parent"
@@ -44,15 +44,15 @@
                 android:gravity="start"
                 android:text="@string/welcome_message"
                 android:textColor="@color/light_green"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/roboto_black"
-                android:text="@string/title_login"
                 android:textColor="@color/primary"
+                android:text="@string/title_login"
                 android:textFontWeight="900"
                 android:textSize="50dp" />
 
@@ -67,7 +67,8 @@
                 android:hint="@string/input_hint_email"
                 android:inputType="textEmailAddress"
                 android:shadowColor="@color/primary"
-                android:textColorHint="@color/gray" />
+                android:textColorHint="@color/gray"
+                android:textSize="16sp" />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/senha_login"
@@ -79,18 +80,18 @@
                 android:hint="@string/input_hint_password"
                 android:inputType="numberPassword"
                 android:shadowColor="@color/primary"
-                android:textColorHint="@color/gray" />
+                android:textColorHint="@color/gray"
+                android:textSize="16sp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/entrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
                 android:backgroundTint="@color/secondary"
                 android:fontFamily="@font/roboto"
                 android:padding="5dp"
                 android:text="@string/button_login"
-                android:textSize="30sp"
+                android:textSize="24sp"
                 app:cornerRadius="50dp" />
 
             <Button
@@ -101,7 +102,7 @@
                 android:fontFamily="@font/roboto"
                 android:text="@string/register_ask"
                 android:textColor="@color/primary"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
 
         </LinearLayout>

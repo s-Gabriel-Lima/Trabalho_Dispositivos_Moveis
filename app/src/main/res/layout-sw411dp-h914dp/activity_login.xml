@@ -17,7 +17,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="fill_parent"
-            android:layout_height="650dp"
+            android:layout_height="800dp"
             android:scaleType="fitEnd"
             android:src="@drawable/imagem_login_fundo"
             app:layout_constraintBottom_toTopOf="parent"
@@ -46,6 +46,7 @@
                 android:textColor="@color/light_green"
                 android:textSize="16sp" />
 
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -54,8 +55,7 @@
                 android:text="@string/title_login"
                 android:textColor="@color/primary"
                 android:textFontWeight="900"
-                android:textSize="50dp" />
-
+                android:textSize="70dp" />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/email_login"
@@ -67,7 +67,8 @@
                 android:hint="@string/input_hint_email"
                 android:inputType="textEmailAddress"
                 android:shadowColor="@color/primary"
-                android:textColorHint="@color/gray" />
+                android:textColorHint="@color/gray"
+                android:textSize="20sp" />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/senha_login"
@@ -79,7 +80,8 @@
                 android:hint="@string/input_hint_password"
                 android:inputType="numberPassword"
                 android:shadowColor="@color/primary"
-                android:textColorHint="@color/gray" />
+                android:textColorHint="@color/gray"
+                android:textSize="20sp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/entrar"

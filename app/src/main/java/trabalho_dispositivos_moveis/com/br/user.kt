@@ -39,7 +39,9 @@ class user : AppCompatActivity() {
 
     private fun recuperar_email(){
         val email = intent.getStringExtra("email")
+        val nome_usuario = intent.getStringExtra("nome_usuario")
         binding.emailUsuario.setText(email)
+        binding.nomeUsuario.setText(nome_usuario)
     }
 
 

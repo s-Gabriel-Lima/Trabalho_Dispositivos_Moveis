@@ -54,39 +54,55 @@ class cadastro : AppCompatActivity() {
                         snackbar.setBackgroundTint(Color.RED)
                         snackbar.show()
 
-                    }else{
+                    }else {
+                        if(senha.length <8){
+                            val snackbar = Snackbar.make(view,"a senha deve conter ao menos 8 caracteres",Snackbar.LENGTH_SHORT)
+                            snackbar.setBackgroundTint(Color.RED)
+                            snackbar.show()
+
+                        }else{
 
 
                         //salva_db()
                         val usuariosmap = hashMapOf(
-                            nome_usuario to nome_usuario,
-                            email to email
+                            "nome_usuario" to nome_usuario,
+                            "email" to email
                         )
 
-                        db.collection("usuarios").document(email_confirmado).set(usuariosmap).addOnCompleteListener {
-                            Log.d("db","sucesso")
-                        }
-
+                        db.collection("usuarios").document(email_confirmado).set(usuariosmap)
+                            .addOnCompleteListener {
+                                Log.d("db", "sucesso")
+                            }
 
 
                         //
-                        auth.createUserWithEmailAndPassword(email,senha).addOnCompleteListener{ cadastro ->
-                            if(cadastro.isSuccessful){
-                                val snackbar = Snackbar.make(view,"Usuário Cadastrado com Sucesso",Snackbar.LENGTH_SHORT)
-                                snackbar.setBackgroundTint(Color.BLUE)
-                                snackbar.show()
-                                binding.email.setText("")
-                                binding.emailConfirmado.setText("")
-                                binding.senha.setText("")
-                                binding.senhaConfirmada.setText("")
-                                binding.nome.setText("")
-                                navegartelaLogin()
-                            }else{
-                                val snackbar = Snackbar.make(view,"Erro ao salvar!",Snackbar.LENGTH_SHORT)
-                                snackbar.setBackgroundTint(Color.RED)
-                                snackbar.show()
+                        auth.createUserWithEmailAndPassword(email, senha)
+                            .addOnCompleteListener { cadastro ->
+                                if (cadastro.isSuccessful) {
+                                    val snackbar = Snackbar.make(
+                                        view,
+                                        "Usuário Cadastrado com Sucesso",
+                                        Snackbar.LENGTH_SHORT
+                                    )
+                                    snackbar.setBackgroundTint(Color.BLUE)
+                                    snackbar.show()
+                                    binding.email.setText("")
+                                    binding.emailConfirmado.setText("")
+                                    binding.senha.setText("")
+                                    binding.senhaConfirmada.setText("")
+                                    binding.nome.setText("")
+                                    navegartelaLogin()
+                                } else {
+                                    val snackbar = Snackbar.make(
+                                        view,
+                                        "Erro ao salvar!",
+                                        Snackbar.LENGTH_SHORT
+                                    )
+                                    snackbar.setBackgroundTint(Color.RED)
+                                    snackbar.show()
+                                }
                             }
-                        }
+                    }
                     }
                 }
             }

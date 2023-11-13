@@ -43,15 +43,24 @@ class user : AppCompatActivity() {
 
 
     private fun recuperar_nome() {
-        val email = intent.getStringExtra("email")
+        val email_consulta = intent.getStringExtra("email")
+        val usuarios_ref = db.collection("usuarios")
 
-        db.collection("usuarios").document("nome_usuario").addSnapshotListener { value, error ->
-            if (value != null) {
-                binding.nomeUsuario.text = value.getString("nome_usuario")
+        usuarios_ref.whereEqualTo("email", email_consulta)
+            .get()
+            .addOnSuccessListener { documents ->
+                for (document in documents) {
+
+                    val nomeUsuario = document.getString("nome_usuario")
+                    if (nomeUsuario != null) {
+
+                        binding.nomeUsuario.setText(nomeUsuario)
+                    } else {
+                        Log.d("db", "Nome de usuário não encontrado para $email_consulta")
+
+                    }
+                }
             }
-            Log.d("db", "${value}")
-        }
-
 
     }
 }
